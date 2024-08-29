@@ -10,6 +10,16 @@ def blog_index(request):
     }
     return render(request, "blog/index.html", context)
 
+def about_me(request):
+    context = {}
+
+    return render(request, "about_me/about.html", context)
+
+def game(request):
+    context = {}
+
+    return render(request, "game/index.html", context)
+
 def blog_detail(request, pk):
     post = Post.objects.get(pk=pk)
     form = CommentForm()

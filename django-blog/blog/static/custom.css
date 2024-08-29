@@ -1,0 +1,9 @@
+:root {
+    --accent: purple;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+    --accent: green;
+    }
+}
